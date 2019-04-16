@@ -4,9 +4,11 @@ import com.baomidou.mybatisplus.annotations.TableName;
 import net.shop.base.entity.BaseEntity;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
-@TableName
+@Table(name = "xx_product")
+@TableName(value = "xx_product")
 public class Product extends BaseEntity {
 
     /** 商品名称 */

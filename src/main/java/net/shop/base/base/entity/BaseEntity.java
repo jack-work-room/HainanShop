@@ -3,9 +3,11 @@ package net.shop.base.entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 import java.util.Date;
 
+@MappedSuperclass
 public class BaseEntity implements Serializable{
     private static final long serialVersionUID = -712583121937672840L;
 
@@ -14,7 +16,7 @@ public class BaseEntity implements Serializable{
     private Date modifyDate;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "sequenceGenerator")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     public Long getId() {
         return id;
     }
