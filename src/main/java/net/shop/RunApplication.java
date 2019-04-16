@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 //包扫描，扫描所有dao接口
-@MapperScan(basePackages="net.shop.*.dao")
+@MapperScan(basePackages="net.shop.core.*.dao")
 @SpringBootApplication
 public class RunApplication {
 
